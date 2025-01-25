@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cyi12s1x7bb8g"
+path="res://.godot/imported/ButterflyCatcher.dialogue-7c015a3bf3d0f4715ba89fc2edc9e1e1.tres"
+
+[deps]
+
+source_file="res://dialogues/ButterflyCatcher.dialogue"
+dest_files=["res://.godot/imported/ButterflyCatcher.dialogue-7c015a3bf3d0f4715ba89fc2edc9e1e1.tres"]
+
+[params]
+
+defaults=true

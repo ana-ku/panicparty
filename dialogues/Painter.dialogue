@@ -1,0 +1,80 @@
+~ painter
+(You tried to escape this infernal mingle when an eccentric painter grabbed you by your arm.)
+Painter: "Hello, I need your advice on my newest project!"
+- Quit your job and go back to college!
+	(You shouted at him. He looks thunderstruck! You might have won this situation!)
+	Painter: "Wow... nobody... you... You are my muse, and I must paint you!"
+	(Damn...)
+	- I don’t want to be your muse!
+		Painter: "Yes, exactly! I want a muse who does not want me back!"
+		- Okay, but you will pay me.
+			Painter: "What?! Never! A true muse will reject me for free!"
+			(He angrily started making doodles in his notepad. You managed to sneak away.)
+		- Go and paint me elsewhere!
+			Painter: "Where?! Where should I paint you, muse?"
+			- In the kitchen.
+				Painter: "Oh yes! You could be the portrait of a 1950s housewife with post-apocalyptic clothes! But instead of a shirt, you will have..."
+				(You will never know what you would have, because you escaped with your shirt.)
+			- In the basement.
+				Painter: "Brilliant! I want to kiss you for that! You know, I once had a beautiful muse in my basement..."
+				(He stopped talking, looked around, and started to sweat. You will never talk about his secret, and he will never talk to you again.)
+			- In the bedroom.
+				Painter: "Oooh, kinky!"
+				- Not like that!
+					Painter: *(Sadly.)* "Oh... well... I should find another muse then!"
+					(He left you. You feel bad for his next muse.)
+				- Exactly!
+					Painter: *(He blushes and rushes to the bedroom. You are lucky, as the bedroom is not near the toilets.)*
+- I have never been a muse!
+    Painter: "Me neither! We have so much in common!"
+    - Can I be your muse after a bathroom break?
+        Painter: "No breaks! We have to paint now!"
+        - I AM GOING TO THE BATHROOM!
+            Painter: "Yes, that’s the energy! The emotions! You are perfect!"
+            (What a dick.)
+            - Kick him PERFECTLY
+                (With the sound of the smallest violence, you escape from him. Ouch.)
+            - Try to run away from him
+                (You turn and make a run for it, hoping he won’t follow. Luckily, you’re right, and you get away.)
+        - I will BREAK you!
+            Painter: "Yes, that’s the energy! The emotions! You are perfect!"
+            (He’s so astounded by your intensity that he doesn’t even try to stop you as you walk away.)
+- Just paint nude.
+	Painter: "What a brilliant idea! But who should be nude, me or my muse?"
+	- You should be nude.
+		Painter: *(Pauses, looking thoughtful.)* "Of course! The ultimate expression of vulnerability and artistry!"
+		(He rushes off to prepare, leaving you free to escape.)
+	- She should be nude.
+		Painter: *(Grins mischievously.)* "Ah, a classic choice! But would she be willing? Let us ask!"
+		(He beckons for someone, clearly preparing for a long-winded discussion.)
+		- Suggest she holds a pineapple.
+			Painter: *(Stops mid-sentence, utterly perplexed.)* "A pineapple? That’s... absurd. But perhaps genius!"
+			(He rushes off to find a pineapple, giving you the perfect opportunity to disappear.)
+		- Ask if she can paint herself.
+			Painter: *(Gasps with delight.)* "A self-portrait! A collaboration between muse and master! This will redefine art!"
+			(He pulls you into a chaotic discussion about logistics, trapping you for artistic eternity, until he loses his motivation, as every artist does after two minutes.)
+			- You know, Van Gogh once painted himself without an ear.
+				Painter: *(Stops mid-sentence, visibly shaken.)* "Without an ear? Fascinating! I must research this immediately!"
+				(He rushes off to gather references, forgetting entirely about you.)
+			- Maybe it would be better as a performance piece.
+				Painter: *(His eyes widen with realization.)* "Of course! Live art! The ultimate medium!"
+				(He grabs a paintbrush and starts performing to an imaginary audience, allowing you to quietly slip away.)
+	- Why not both?
+		Painter: *(His eyes widen with excitement.)* "Genius! A bold commentary on duality and balance. I must begin sketching immediately!"
+		(He begins drafting a plan, clearly expecting you to stay involved.)
+		- Suggest she holds a pineapple.
+			Painter: *(Stops mid-sentence, utterly perplexed.)* "A pineapple? That’s... absurd. But perhaps genius!"
+			(He rushes off to find a pineapple, giving you the perfect opportunity to disappear.)
+		- Ask if she can paint herself.
+			Painter: *(Gasps with delight.)* "A self-portrait! A collaboration between muse and master! This will redefine art!"
+			(He pulls you into a chaotic discussion about logistics, trapping you for artistic eternity, until he loses his motivation, as every artist does after two minutes.)
+			- You know, Van Gogh once painted himself without an ear.
+				Painter: *(Stops mid-sentence, visibly shaken.)* "Without an ear? Fascinating! I must research this immediately!"
+				(He rushes off to gather references, forgetting entirely about you.)
+			- Maybe it would be better as a performance piece.
+				Painter: *(His eyes widen with realization.)* "Of course! Live art! The ultimate medium!"
+				(He grabs a paintbrush and starts performing to an imaginary audience, allowing you to quietly slip away.)
+- My favorite painter is Leonardo DiCaprio.
+	Painter: "And your favorite actor is Leonardo da Vinci, right? The youth is truly hopeless these days!"
+	*(Shaking his head in utter disappointment, he mutters something about the decline of art and storms off, leaving you blissfully alone. You have successfully escaped.)*
+=> END
