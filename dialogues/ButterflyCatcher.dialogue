@@ -1,0 +1,97 @@
+~ butterfly
+Butterfly Collector: "Ah, perfect timing! I don’t think I’ve shared the wonders of my butterfly collection with you yet!"
+- Sorry, I have to go
+	Hero: "I am sorry, but I have to go."
+	Butterfly Collector: "To hunt butterflies? Maybe... social butterflies, hahaha."
+	- I really have to go
+		Hero: "I am so sorry, but I must..."
+		Butterfly Collector: "Must kill all the moths? Hahaha, I hate moths." 
+		Butterfly Collector: "*Stupid moths, they think they are so cool.*"
+		- Yes, kill moths
+			Hero: "Moths... they're planning a coup."
+			Butterfly Collector: "A coup? Ridiculous! Wait, do you mean against butterflies?!"
+			Hero: (Nods seriously.)
+			Butterfly Collector: "Go, defend the butterflies! Quickly!"
+			(You successfully escape.)
+		- Beg for Release
+			Hero: "Please. Let me go."
+			Butterfly Collector: "Hm... Butterflies do value freedom. Fine, go. But come back later!"
+			(He steps aside, and you make your escape.)
+	- Yes! Hunt butterflies!
+		Hero: "I want to hunt a lot of butterflies!"
+		Butterfly Collector: "Why, may I ask?"
+		- I love them!
+			Hero: "I wanna make love with them!"
+			Butterfly Collector: "Ehm... well... go!"
+			(You successfully managed to escape.)
+		- I hate them
+			Hero: "I wanna annihilate them!"
+			Butterfly Collector: "That's just dumb. If you want my advice..."
+			(He is starting to describe his life. You never made it to the toilet. But you learned about the beauty of this world. It's just butterflies. Oh well. This is where the game ends.)
+- (Change the subject)
+	Hero: "Butterflies, huh? Did you see that punch bowl? Crazy, right?"
+	Butterfly Collector: "Oh no, not really, I was too busy thinking about butterflies. But now that you mention it, the punch reminds me of the crimson red of the Scarlet Mormon butterfly..."
+	(The conversation drags on, and you start regretting life decisions.)
+	- Fake Enthusiasm
+		Hero: "Wow, that's so interesting! Tell me more about the Scarlet... Mormon butterfly?"
+		Butterfly Collector: "Oh, I'm glad you're interested! Did you know it's actually named after missionary movements? Its vibrant red symbolizes their passion! Hahahahaha."
+		(While he gets lost in laughter, you manage to sneak away.)
+	- Subtle Escape
+		Hero: "Fascinating! You know, I think I just saw someone spill punch on the Scarlet Tablecloth Butterfly! Maybe you should check it out?"
+		Butterfly Collector: "What? There’s no Scarlet Tablecloth Butterfly! I may have confused you. Let me explain again."
+		(He laughs, but immediately goes back to explaining the Scarlet Mormon butterfly, repeating everything he just said.)
+		- Fake Enthusiasm
+			Hero: "Wow, that's so interesting! Tell me more about the Scarlet... Mormon butterfly?"
+			Butterfly Collector: "Oh, I'm glad you're interested! Did you know it's actually named after missionary movements? Its vibrant red symbolizes their passion!"
+			(While he gets lost in details, you manage to sneak away.)
+			- Play Dumb
+				Hero: "Wait, wait... butterflies can be red? I thought they were all, like, yellow or blue!"
+				Butterfly Collector: "Oh, my dear friend, you have so much to learn about butterflies. Here, let me show you something!"
+				(He starts pointing to objects around you to explain butterfly colors.)
+				- Try to escape while he's not looking
+					Hero: (You try to sneak away.)
+					Butterfly Collector: "Ah, wait! You can’t leave yet, I haven’t even shown you my butterfly photos on my phone!"
+					(He gently pulls you back to show you photos, and you're trapped. FOREVER.)
+				- Point at something yourself
+					Hero: "Oh, like that vase over there? The colors kind of remind me of a butterfly too!"
+					Butterfly Collector: "Yes, exactly! You’re starting to see the beauty of it now! Oh wait, let me check that vase closer..."
+					(While he focuses on the vase, you quickly escape to the bathroom.)
+- Behind you!
+	Hero: "Look, behind you!"
+	Butterfly Collector: "What?"
+	- Just point and scream
+		Butterfly Collector: (He turns around and you use the moment to escape from his butterfly torment.)
+	- A moth!
+		Butterfly Collector: "Where? I wanna kill him for ruining my wedding night!"
+		(He turns around and you use the moment to escape from his butterfly torment.)
+	- A butterfly!
+		Butterfly Collector: "Butterflies are sleeping. Did they not teach you that in school? When I was your age..."
+		You: (The torment of his lecture is long, painful, and you built hate for butterflies. All because of this man.)
+		
+		- Can I go now?
+			Butterfly Collector: "Where would you go? I have pictures of butterflies on my phone, give me a minute."
+			- Run
+				You: (You successfully run away.)
+			- Wait
+				You: (You politely waited. Sorry, you lost.)
+		- Weird Flex
+			Hero: "Did you know I once caught a butterfly using only a spoon?"
+			Butterfly Collector: "A spoon? That’s amateur hour! I once caught a Swallowtail while blindfolded, standing on one leg during a thunderstorm. Sit down, let me tell you how..."
+			(He starts an epic tale of his butterfly-hunting adventures. You’re stuck listening, regretting everything.)
+			- Admire him
+				Hero: "Cool story, bro."
+				Butterfly Collector: (Eyes narrow.) "Bro? BRO?! Do you have any idea what it takes to catch a Swallowtail in a thunderstorm? Sit down. You’re not leaving until you respect the craft."
+				(You’re forced to endure his dramatic lecture, trapped forever in butterfly hell.)
+			- Out-Crazy the Crazy
+				Hero: "Thunderstorm? Cute. I wrestled a moth king once."
+				Butterfly Collector: (Eyes widen.) "The Moth King?! Impossible! Tell me everything!"
+				Hero: (Deadpan.) "Can’t. Sworn to secrecy."
+				Butterfly Collector: "Of course, of course! You must go! The truth is too dangerous!"
+				(He bows in respect as you casually walk away.)
+		- Fake a Horrific Act
+			Hero: (Suddenly swats at the air and pretends to grab something invisible.)
+			Hero: "Mmm... crunchy." (Mimics chewing and swallowing.)
+			Butterfly Collector: "WHAT?! YOU ATE A BUTTERFLY?!" (He turns pale, gags, and rushes to the nearest trash can to vomit.)
+			(While he’s occupied, you bolt for freedom.)
+	  	=> END!
+=> END!
