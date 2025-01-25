@@ -1,5 +1,6 @@
 [gd_scene load_steps=69 format=4 uid="uid://c2mpk37hk11tu"]
 
+[ext_resource type="Script" path="res://panicparty_scn.gd" id="1_8j68a"]
 [ext_resource type="Texture2D" uid="uid://b7y1o5y8h8tiq" path="res://assets/kenney_pixel-ui-pack/9-Slice/Colored/blue_pressed.png" id="1_e5isc"]
 [ext_resource type="Script" path="res://canvas_layer.gd" id="1_gwm1e"]
 [ext_resource type="Texture2D" uid="uid://csgb4288vwnlx" path="res://assets/pixil-frame-wall6.png" id="2_4i23q"]
@@ -1027,6 +1028,7 @@ label_settings = SubResource("LabelSettings_1k647")
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
+
 metadata/_edit_use_anchors_ = true
 
 [node name="painter" type="CharacterBody2D" parent="CanvasLayer" groups=["npcs"]]
