@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=4 uid="uid://c2mpk37hk11tu"]
+[gd_scene load_steps=39 format=4 uid="uid://c2mpk37hk11tu"]
 
 [ext_resource type="Texture2D" uid="uid://b7y1o5y8h8tiq" path="res://assets/kenney_pixel-ui-pack/9-Slice/Colored/blue_pressed.png" id="1_e5isc"]
 [ext_resource type="Script" path="res://player.gd" id="2_mjwrh"]
 [ext_resource type="Texture2D" uid="uid://bhhvur8ykrfkt" path="res://assets/sprites/player_Idle.png" id="2_xrh6b"]
 [ext_resource type="Texture2D" uid="uid://c711416g2qj0a" path="res://assets/sprites/player_walk.png" id="4_nslhi"]
+[ext_resource type="Texture2D" uid="uid://dcd6e0licgbbc" path="res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/48x48/Char_002_Idle.png" id="5_6pao3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8j7v"]
 texture = ExtResource("1_e5isc")
@@ -195,6 +196,50 @@ animations = [{
 radius = 16.0
 height = 60.0
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_y4vgg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wpvua"]
+radius = 12.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86xs7"]
+atlas = ExtResource("5_6pao3")
+region = Rect2(0, 0, 72, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yp5ia"]
+atlas = ExtResource("5_6pao3")
+region = Rect2(72, 0, 72, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nplkj"]
+atlas = ExtResource("5_6pao3")
+region = Rect2(144, 0, 72, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_240bl"]
+atlas = ExtResource("5_6pao3")
+region = Rect2(216, 0, 72, 72)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gw1pi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86xs7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yp5ia")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nplkj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_240bl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tgcpr"]
+radius = 73.0
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Layer0" type="TileMapLayer" parent="."]
@@ -229,3 +274,48 @@ sprite_frames = SubResource("SpriteFrames_fat4a")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(0, 8)
 shape = SubResource("CapsuleShape2D_0212i")
+
+[node name="Protective_bubble" type="Area2D" parent="Player"]
+position = Vector2(1, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Protective_bubble"]
+material = SubResource("CanvasItemMaterial_y4vgg")
+scale = Vector2(6.6, 6.28)
+shape = SubResource("CircleShape2D_wpvua")
+debug_color = Color(0.686275, 0.717647, 0.870588, 0)
+
+[node name="NPC1" type="CharacterBody2D" parent="."]
+position = Vector2(132, 191)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC1"]
+sprite_frames = SubResource("SpriteFrames_gw1pi")
+frame = 3
+frame_progress = 0.882526
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1"]
+position = Vector2(2, 5)
+shape = SubResource("CircleShape2D_tgcpr")
+
+[node name="NPC2" type="CharacterBody2D" parent="."]
+position = Vector2(-113, 340)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC2"]
+sprite_frames = SubResource("SpriteFrames_gw1pi")
+frame = 3
+frame_progress = 0.882526
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
+position = Vector2(2, 5)
+shape = SubResource("CircleShape2D_tgcpr")
+
+[node name="NPC3" type="CharacterBody2D" parent="."]
+position = Vector2(-154, 156)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC3"]
+sprite_frames = SubResource("SpriteFrames_gw1pi")
+frame = 3
+frame_progress = 0.882526
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
+position = Vector2(2, 5)
+shape = SubResource("CircleShape2D_tgcpr")
