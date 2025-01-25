@@ -4,7 +4,7 @@ var music_player
 
 func _ready():
 
-	music_player = get_node("/root/Node2D/BackgroundMusic")
+	music_player = get_node("/root/Node2D/CanvasLayer/BackgroundMusic")
 	if music_player == null:
 		print("Node 'BackgroundMusic' not found!")
 		return
