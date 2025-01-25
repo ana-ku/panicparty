@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cm3uej26814m2"
+path="res://.godot/imported/TrueCrimePodcaster.dialogue-6d541cac1cf565a61e298e486567d922.tres"
+
+[deps]
+
+source_file="res://dialogues/TrueCrimePodcaster.dialogue"
+dest_files=["res://.godot/imported/TrueCrimePodcaster.dialogue-6d541cac1cf565a61e298e486567d922.tres"]
+
+[params]
+
+defaults=true
