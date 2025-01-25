@@ -1,0 +1,89 @@
+~ Nun
+(A serene-looking nun in a perfectly pressed habit appears beside you, holding a prayer book. Her calm smile is almost unnerving, and her gaze feels as though she can see right through you.)
+
+Nun: "Good evening, my child. Are you finding peace and purpose in this gathering of lost souls?"
+- I need to go to the bathroom.
+	Nun: (Nods sagely, flipping through her prayer book.)  
+	"Ah, as it is written in Ecclesiastes 3:1, 'To everything there is a season, and a time for every purpose under heaven.' Tell me, child—do you need to go number one or number two?"  
+	- Number one.
+		Nun: (Closes her book with a soft smile.)  "Go, then, and be swift. The Lord frowns upon lingering in unholy places."  
+		(She steps aside, allowing you to leave.)  
+	- Number two.
+		Nun: (Closes her book with a solemn nod.)  "May your burdens be light, and your aim true. Go in peace, child."  
+		(She steps aside, allowing you to leave.)  
+	- I’m not going to tell you that.
+		Nun: (Smiles slightly, tilting her head in curiosity.)  "Ah, a secretive one. Very well, then. But secrets weigh upon the soul, you know. Tell me, child, is there something deeper troubling you?"  
+		(She subtly shifts the topic, leading to further conversation about your "spiritual burdens.") 
+		- Because it’s a mystery even to me.
+			Nun: (Her smile widens as if she’s heard the greatest confession of the night.)  "A mystery, indeed. The greatest burdens are often those we don’t fully understand ourselves."  
+			Nun: (She gently pats your shoulder.) "Go and seek your answers, child. I’ll be here if the mystery ever unravels."  
+			(She steps aside, letting you leave with a mixture of amusement and pity.)  
+		- What if I told you it’s none of your business?
+			Nun: (She sighs deeply, clutching her prayer book to her chest.)  "Ah, such defiance, yet I see the struggle in your eyes. Very well, if it must remain your secret burden, I shall not press further."  (She pauses, her expression softening slightly.)  
+			"But truly, child, between us—are we speaking of number one or number two?"  
+			- Number one.
+				Nun: (Nods with a serene smile.)  "Go, then, and be swift. May the Lord guide you in haste."  
+				(She steps aside, allowing you to leave.)  
+			- Number two.
+				Nun: (Her expression grows solemn, and she places a hand over her heart.)  "May your burdens be light, and your aim true. Go in peace, child."  
+				(She steps aside, allowing you to leave.)  
+		- I just don’t trust nuns who quote Bible verses about bathrooms.
+			Nun: (Laughs softly but steps closer, lowering her voice conspiratorially.)  "Smart, child. Never trust anyone who quotes Ecclesiastes near the loo. I will pray for you."  
+			(She lets you go with a glimmer of amusement in her eyes.)  
+- Is that Archangel Michael over there?
+	Nun: (Her serene expression doesn’t falter as she looks toward where you’re pointing.)  "Archangel Michael? A fascinating claim. But tell me, child—how many eyes does he have?"  
+	- Two?
+		Nun: (Shakes her head, disappointed.)  "Only two? Such mortal limitations. Perhaps you need to reflect on the true form of heavenly beings."  
+		(She pulls you into a theological discussion about biblical angelic forms, and you are trapped.)  
+		- I am sure he has two!
+			Nun: (Her smile fades slightly, replaced with a look of mild disappointment.)  "Two eyes? Oh, child, such naivety. Clearly, you are in desperate need of religious instruction. Allow me to guide you."  
+			(She opens a small prayer book and gestures for you to listen attentively.)  
+			- I’m actually late for a lesson.  
+				Nun: (Nods approvingly.)  "Ah, a diligent student already on the path of learning. Very well, I won’t keep you. May your journey be blessed."  
+				(She steps aside, letting you leave.)  
+			- I’m not interested in any lessons.  
+				Nun: (Her eyes narrow, and her tone grows stern.)  "Not interested? Ignorance is a dangerous path, child. Sit down, and I will enlighten you."  
+				(She begins reciting passages from Ezekiel, trapping you in an exhaustive theological lecture about angelic forms and divine mysteries.)  
+				- Shout, "I need an angel shot!"  
+					Nun: (Her eyes widen in shock, and she immediately steps back.)  "An angel shot? Oh dear, I didn’t realize the danger you were in. Go, child, and seek safety!"  
+					(She makes the sign of the cross and hurriedly walks away, leaving you free to escape.)  
+				- Threaten her with nun-chucks.  
+					Nun: (Her serene expression turns to utter confusion, then panic.)  "Nun-chucks?! A weapon with my very name?! Such sacrilege!"  
+					(She clutches her prayer book tightly and steps back in terror.)  "Fine, child, go and swing your unholy weapon elsewhere! May the Lord forgive your terrible pun."  
+					(She retreats quickly, leaving you free to slip away.)  
+		- I did not say he has only two, but he has at least two eyes.
+			Nun: (She is struck. You were technically correct, which is the best kind of correct.)  "I... I... Lord forgive me."  
+			(You defeated the nun. Are you proud? No. Are you free to go? Hell yes!)  
+		- I was wrong, okay?!
+			Nun: "I forgive you, child, for your stupidity is not your fault."  
+			- Thank you for forgiveness.
+				Nun: (Her serene smile softens.)  "Forgiveness is the path to salvation, child. Go forth and seek the light in all you do."  
+				(She bows her head slightly and steps aside.)  
+			- (Be silent)
+				Nun: (The nun gazes directly at you, her expression calm but unyielding. The silence stretches on, becoming heavier and more awkward with every second.)  
+				=> Thankyou  
+	- Many?
+		Nun: (Smiles knowingly.)  "Ah, yes. Eyes upon eyes, as Ezekiel described. But don’t let your curiosity lead you astray."  
+		(She lets you go, her expression suggesting she knows more than she’s letting on.)  
+	- None.
+		Nun: (Pauses, her smile fading slightly.)  "None? A bold and heretical claim, child. Do you think such beings are beyond sight, or is this simply ignorance?"  
+		(She looks deeply intrigued, clearly not letting you leave just yet as she presses for an explanation.)  
+		- I don’t see eyes. I am actually blind.
+			Nun: (Her eyebrows lift in surprise, and she chuckles softly.)  "Blindness is your gift? Interesting. Perhaps faith truly does guide the hand more than sight."  
+			(She steps aside, amused by your strange logic, allowing you to leave.)  
+		- I just wanted to mess with you.
+			Nun: (She lets out a long sigh and places her hands together as if in prayer.)  "Messing with a nun? Truly, the devil works in mysterious ways."  
+			(She shakes her head, stepping aside.)  "Go, child, before I reconsider my patience with you."  
+- I actually worship hell.
+	Nun: (Looks around and leans towards you.)  "Well, don’t we all?"  (She winks and presses a finger to her lips, motioning for silence.)  
+	(You now realize that this nun has secrets of her own. She steps aside, letting you pass with an amused glint in her eyes.)  
+	=> END  
+
+~ Thankyou
+- Thank you for forgiveness.
+	Nun: (Her serene smile softens.)  "Forgiveness is the path to salvation, child. Go forth and seek the light in all you do."  
+	(She bows her head slightly and steps aside.)  
+	=> END  
+- (Be silent)
+	Nun: (The nun stares at you patiently. The silence is heavy... and just awkward.)  
+	=> Thankyou  

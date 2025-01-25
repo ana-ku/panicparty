@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=4 uid="uid://c2mpk37hk11tu"]
+[gd_scene load_steps=85 format=4 uid="uid://c2mpk37hk11tu"]
 
 [ext_resource type="Texture2D" uid="uid://b7y1o5y8h8tiq" path="res://assets/kenney_pixel-ui-pack/9-Slice/Colored/blue_pressed.png" id="1_e5isc"]
 [ext_resource type="Script" path="res://panicparty_scn.gd" id="1_xr3gr"]
@@ -20,6 +20,9 @@
 [ext_resource type="Resource" uid="uid://cyi12s1x7bb8g" path="res://dialogues/ButterflyCatcher.dialogue" id="13_n4co2"]
 [ext_resource type="Resource" uid="uid://cm3uej26814m2" path="res://dialogues/TrueCrimePodcaster.dialogue" id="15_xcvc7"]
 [ext_resource type="Script" path="res://victory_area.gd" id="17_wqp8q"]
+[ext_resource type="Script" path="res://meltdown_meter.gd" id="21_6rqvh"]
+[ext_resource type="Texture2D" uid="uid://cpb5u1ex8yyr6" path="res://assets/meltdown_texture.tres" id="21_gbs67"]
+[ext_resource type="Texture2D" uid="uid://cakk1q88i31tc" path="res://assets/sprites/icons8-arrow-48.png" id="22_2gxij"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8j7v"]
 texture = ExtResource("1_e5isc")
@@ -853,6 +856,16 @@ animations = [{
 radius = 63.0
 height = 138.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ke30u"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4g727"]
+font_size = 19
+
 [sub_resource type="LabelSettings" id="LabelSettings_1k647"]
 font_size = 26
 
@@ -899,6 +912,15 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_m1usl"]
 radius = 115.27
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u168u"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cg5w8"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_w7pv8"]
 atlas = ExtResource("10_teasu")
 region = Rect2(0, 0, 72, 72)
@@ -934,6 +956,13 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qb3ds"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0.154876, 0.154876, 0.154876, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dhi7d"]
 atlas = ExtResource("12_wxaw0")
@@ -971,6 +1000,13 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wh6do"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0, 0, 0.85098)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1m6f4"]
 size = Vector2(103, 160)
 
@@ -987,6 +1023,15 @@ fill = 1
 fill_from = Vector2(0.504587, 0.497706)
 fill_to = Vector2(0.889908, 0.899083)
 
+[sub_resource type="LabelSettings" id="LabelSettings_monn0"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wvk6f"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_16aps"]
+size = Vector2(79, 184.5)
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(8, 38)
 script = ExtResource("1_xr3gr")
@@ -998,7 +1043,7 @@ tile_map_data = PackedByteArray("AAD9//7/AAACAAIAAAD9////AAACAAAAAAD9/wAAAAACAAE
 tile_set = SubResource("TileSet_jvp5i")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(650, 311)
+position = Vector2(645, 301)
 
 [node name="Layer1" type="TileMapLayer" parent="."]
 use_parent_material = true
@@ -1007,7 +1052,8 @@ tile_map_data = PackedByteArray("AADj//n/CAADAAIAAADj//r/CAADAAIAAADj//v/CAADAAI
 tile_set = SubResource("TileSet_jvp5i")
 
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(109, 48)
+z_index = 2
+position = Vector2(129, 136)
 script = ExtResource("2_mjwrh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
@@ -1015,14 +1061,27 @@ z_index = 1
 sprite_frames = SubResource("SpriteFrames_fat4a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(6, 15)
+position = Vector2(1, 7)
 shape = SubResource("CapsuleShape2D_0212i")
 
-[node name="Line2D" type="Line2D" parent="Player"]
-position = Vector2(74, 8)
-points = PackedVector2Array(-12, 33, -52, 65, -85, 60, -124, 41, -138, 6, -128, -32, -106, -56, -63, -60, -15, -49, -4, -24, -3, 7)
+[node name="ProtectiveBubble" type="Line2D" parent="Player"]
+position = Vector2(57, 8)
+scale = Vector2(0.822817, 0.865173)
+points = PackedVector2Array(-12, 33, -26.7374, 48.5452, -52.0169, 61.6, -85, 60, -103.248, 51.1099, -123.955, 38.5, -130.278, 23.8677, -138, 6, -132.809, -15.4, -128, -32, -119.012, -41.805, -106, -56, -83.0056, -62.7, -63, -60, -39.8427, -57.2, -22.1348, -49.5, -11.0674, -33, -5.53371, -19.8, -5.53372, -4.80012, -5.53371, 11)
 closed = true
+width = 31.0
 default_color = Color(1, 1, 0, 1)
+
+[node name="Label" type="Label" parent="Player"]
+offset_left = -61.0
+offset_top = -112.0
+offset_right = 68.0
+offset_bottom = -84.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ke30u")
+label_settings = SubResource("LabelSettings_4g727")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Label" type="Label" parent="."]
 offset_left = 1088.0
@@ -1040,7 +1099,7 @@ uppercase = true
 metadata/_edit_use_anchors_ = true
 
 [node name="painter" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(506, 143)
+position = Vector2(534, 204)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("11_ak0q7")
 dialogue_start = "painter"
@@ -1060,14 +1119,19 @@ frame_progress = 0.308334
 [node name="CollisionShape2D" type="CollisionShape2D" parent="painter/Area2D"]
 shape = SubResource("CircleShape2D_m1usl")
 
+[node name="Polygon2D" type="Polygon2D" parent="painter"]
+
 [node name="Label" type="Label" parent="painter"]
-visible = false
 offset_left = -55.0
 offset_top = -87.0
-offset_right = 57.0
-offset_bottom = -38.0
+offset_right = 63.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_u168u")
 text = "There you are!
 Come here!"
+label_settings = SubResource("LabelSettings_cg5w8")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="butterfly_catcher" type="CharacterBody2D" parent="." groups=["npcs"]]
 position = Vector2(905, 164)
@@ -1087,13 +1151,18 @@ sprite_frames = SubResource("SpriteFrames_rkwa0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="butterfly_catcher/Area2D"]
 shape = SubResource("CircleShape2D_m1usl")
 
+[node name="Polygon2D" type="Polygon2D" parent="butterfly_catcher"]
+
 [node name="Label" type="Label" parent="butterfly_catcher"]
-visible = false
 offset_left = -55.0
 offset_top = -87.0
-offset_right = 57.0
-offset_bottom = -38.0
-text = "Come and give me a quick hello!"
+offset_right = 93.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qb3ds")
+text = "Come and give me 
+a quick hello!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="podcaster" type="CharacterBody2D" parent="." groups=["npcs"]]
 position = Vector2(637, 501)
@@ -1114,14 +1183,18 @@ sprite_frames = SubResource("SpriteFrames_pqak8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="podcaster/Area2D"]
 shape = SubResource("CircleShape2D_m1usl")
 
+[node name="Polygon2D" type="Polygon2D" parent="podcaster"]
+
 [node name="Label" type="Label" parent="podcaster"]
-visible = false
 offset_left = -55.0
 offset_top = -87.0
-offset_right = 57.0
-offset_bottom = -38.0
+offset_right = 101.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wh6do")
 text = "Aha! There you are,
 come and say hi!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="VictoryArea" type="Area2D" parent="."]
 position = Vector2(-169, -139)
@@ -1199,7 +1272,7 @@ texture = SubResource("GradientTexture2D_tlu6m")
 texture_scale = 2.67
 
 [node name="PointLight2D6" type="PointLight2D" parent="."]
-position = Vector2(67, -15)
+position = Vector2(63, -6)
 color = Color(0.526177, 0.519572, 0.661845, 1)
 energy = 3.58
 texture = SubResource("GradientTexture2D_tlu6m")
@@ -1219,4 +1292,53 @@ energy = 3.58
 texture = SubResource("GradientTexture2D_tlu6m")
 texture_scale = 3.14
 
+[node name="Meltdown_Meter" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1207.0
+offset_top = 46.0
+offset_right = 1247.0
+offset_bottom = 86.0
+script = ExtResource("21_6rqvh")
+
+[node name="Gradient" type="TextureRect" parent="Meltdown_Meter"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 1.0
+offset_right = 371.0
+offset_bottom = 81.0
+rotation = 1.5708
+texture = ExtResource("21_gbs67")
+
+[node name="Label" type="Label" parent="Meltdown_Meter"]
+layout_mode = 0
+offset_left = -39.0
+offset_top = 11.0
+offset_right = 1.0
+offset_bottom = 34.0
+text = "OK"
+label_settings = SubResource("LabelSettings_monn0")
+
+[node name="Label2" type="Label" parent="Meltdown_Meter"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 327.0
+offset_right = 20.0
+offset_bottom = 350.0
+text = "Meltdown"
+label_settings = SubResource("LabelSettings_wvk6f")
+
+[node name="Measure" type="Area2D" parent="Meltdown_Meter"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Meltdown_Meter/Measure"]
+position = Vector2(-19, 255)
+shape = SubResource("RectangleShape2D_16aps")
+debug_color = Color(0, 0.6, 0.701961, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Meltdown_Meter"]
+position = Vector2(23, 163)
+rotation = -3.14159
+texture = ExtResource("22_2gxij")
+
+[connection signal="resilience_decreased" from="Player" to="Meltdown_Meter" method="_on_player_resilience_decreased"]
 [connection signal="body_entered" from="VictoryArea" to="VictoryArea" method="_on_body_entered"]

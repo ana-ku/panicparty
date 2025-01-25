@@ -1,5 +1,21 @@
 extends Node2D
 
+# Parametry kruhu
+var min_radius = 100
+var max_radius = 130
+var oscillation_speed = 2.0
+var segments = 64
+var polygon
+var polygon_butterfly_catcher
+var polygon_podcaster
+var collision_shape_painter
+var collision_shape_butterfly_catcher
+var collision_shape_podcaster
+
+# Proměnné
+var current_radius = min_radius  # Aktuální poloměr
+var time_passed = 0.0  # Čas od spuštění
+
 var victory_panel
 
 # Called when the node enters the scene tree for the first time.
@@ -9,6 +25,12 @@ func _ready() -> void:
 	var spectrum_analyzer = AudioServer.get_bus_effect_instance(bus_index, effect_index)
 	victory_panel = $Panel
 	victory_panel.visible = false
+	polygon = get_node("painter/Polygon2D")
+	polygon.color = Color(0.6, 0.6, 1.0, 0.5)
+	polygon_butterfly_catcher = get_node("butterfly_catcher/Polygon2D")
+	polygon_butterfly_catcher.color = Color(0.8, 0.6, 1.0, 0.5)
+	polygon_podcaster = get_node("podcaster/Polygon2D")
+	polygon_podcaster.color = Color(0.2, 0.6, 1.0, 0.5)
 
 @export var audio_player: AudioStreamPlayer
 @export var lights: Array[PointLight2D] = []
@@ -37,3 +59,27 @@ func _process(delta):
 		for light in lights:
 			if light is PointLight2D:
 				light.energy = lerp(light.energy, low_band_energy * 5.0, 0.2) # Efekt blikání		
+
+	time_passed += delta * oscillation_speed
+	current_radius = lerp(min_radius, max_radius, (sin(time_passed) + 1) / 2)
+	update_circle()
+	
+func update_circle():
+	var points = []
+	for i in range(segments):
+		var angle = 2 * PI * i / segments
+		var x = current_radius * cos(angle)
+		var y = current_radius * sin(angle)
+		points.append(Vector2(x, y))
+
+	polygon.polygon = points
+	polygon_butterfly_catcher.polygon = points
+	polygon_podcaster.polygon = points
+	collision_shape_painter = get_node("painter/Area2D/CollisionShape2D")
+	collision_shape_painter.shape.radius = current_radius
+	
+	collision_shape_butterfly_catcher = get_node("butterfly_catcher/Area2D/CollisionShape2D")
+	collision_shape_butterfly_catcher.shape.radius = current_radius
+	
+	collision_shape_podcaster = get_node("podcaster/Area2D/CollisionShape2D")
+	collision_shape_podcaster.shape.radius = current_radius

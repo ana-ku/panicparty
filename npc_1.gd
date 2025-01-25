@@ -28,7 +28,8 @@ func _on_body_entered(body):
 		dialogue_bubble.visible = true
 		emit_signal("start_dialogue_with_npc", self)
 		DialogueManager.show_dialogue_balloon(dialogue_resource, dialogue_start)
-
+		await get_tree().create_timer(3).timeout
+		dialogue_bubble.visible = false
 # This function is called when the player exits the NPC's area
 func _on_body_exited(body): #kdyz hráč opustí, už npc nebude fungovat
 	if body.name == "Player":

@@ -1,0 +1,8 @@
+[gd_resource type="GradientTexture2D" load_steps=2 format=3 uid="uid://cpb5u1ex8yyr6"]
+
+[ext_resource type="Gradient" uid="uid://bob8ua4y4bibs" path="res://assets/meltdown.tres" id="1_rcyyb"]
+
+[resource]
+gradient = ExtResource("1_rcyyb")
+width = 349
+height = 80
