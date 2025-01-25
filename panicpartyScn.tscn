@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://c2mpk37hk11tu"]
+[gd_scene load_steps=43 format=4 uid="uid://c2mpk37hk11tu"]
 
 [ext_resource type="Texture2D" uid="uid://b7y1o5y8h8tiq" path="res://assets/kenney_pixel-ui-pack/9-Slice/Colored/blue_pressed.png" id="1_e5isc"]
 [ext_resource type="Texture2D" uid="uid://csgb4288vwnlx" path="res://assets/pixil-frame-wall6.png" id="2_4i23q"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://cori4ynb3vxrf" path="res://assets/LPC_city_inside/city_inside.png" id="4_pdf3c"]
 [ext_resource type="Texture2D" uid="uid://otlxc7mefbrw" path="res://assets/pixil-frame-wall4.png" id="4_td63p"]
 [ext_resource type="Texture2D" uid="uid://dsbe13uh1csyt" path="res://assets/pixil-frame-wall5.png" id="5_o2oev"]
+[ext_resource type="AudioStream" uid="uid://8d2ivqb2xqhx" path="res://assets/music/JsoundLAB - Breakbeat Loop.mp3" id="10_00urh"]
+[ext_resource type="Script" path="res://toggle_music_button.gd" id="11_jaguh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8j7v"]
 texture = ExtResource("1_e5isc")
@@ -855,7 +857,7 @@ tile_map_data = PackedByteArray("AAD9//7/AAACAAIAAAD9////AAACAAAAAAD9/wAAAAACAAE
 tile_set = SubResource("TileSet_jvp5i")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-169, 178)
+position = Vector2(-131, 178)
 
 [node name="Layer1" type="TileMapLayer" parent="."]
 use_parent_material = true
@@ -887,3 +889,15 @@ label_settings = SubResource("LabelSettings_1k647")
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_00urh")
+autoplay = true
+
+[node name="ToggleMusicButton" type="Button" parent="."]
+offset_left = 370.0
+offset_top = -156.0
+offset_right = 490.0
+offset_bottom = -106.0
+text = "Mute Music"
+script = ExtResource("11_jaguh")
