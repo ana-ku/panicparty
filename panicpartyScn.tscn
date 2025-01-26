@@ -1114,7 +1114,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="painter" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(668, 92)
+position = Vector2(710, 343)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("11_ak0q7")
 dialogue_start = "painter"
@@ -1132,6 +1132,7 @@ frame_progress = 0.308334
 [node name="Area2D" type="Area2D" parent="painter"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="painter/Area2D"]
+position = Vector2(-3, -15)
 shape = SubResource("CircleShape2D_m1usl")
 
 [node name="Polygon2D" type="Polygon2D" parent="painter"]
@@ -1150,7 +1151,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="nun" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(173, 502)
+position = Vector2(145, 513)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("15_wf515")
 dialogue_start = "Nun"
@@ -1187,7 +1188,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="butterfly_catcher" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(1032, 55)
+position = Vector2(366, 263)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("13_n4co2")
 dialogue_start = "butterfly"
@@ -1218,7 +1219,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="podcaster" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(446, 524)
+position = Vector2(493, 76)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("15_xcvc7")
 dialogue_start = "truecrime"
@@ -1250,7 +1251,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="game_jammer" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(720, 539)
+position = Vector2(1046, 251)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("20_35twn")
 dialogue_start = "game_jammer"
@@ -1282,7 +1283,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="mary_shelley" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(504, 357)
+position = Vector2(862, 39)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("21_byue6")
 dialogue_start = "Mary_Shelley"
@@ -1314,7 +1315,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="psychologist" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(1011, 311)
+position = Vector2(584, 507)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("22_gbdjg")
 dialogue_start = "Psychologist"
@@ -1346,7 +1347,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ex" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(430, 83)
+position = Vector2(926, 562)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("23_kbc4g")
 dialogue_start = "expartner"
@@ -1560,6 +1561,7 @@ label_settings = SubResource("LabelSettings_g8ndt")
 [node name="Button" type="Button" parent="LosingPanel/Panel"]
 top_level = true
 z_index = 1
+layout_mode = 0
 offset_left = 488.0
 offset_top = 378.0
 offset_right = 695.0

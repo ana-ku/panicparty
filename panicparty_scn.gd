@@ -87,10 +87,9 @@ func update_circle():
 	for npc in get_tree().get_nodes_in_group("npcs"):
 		var old_shape
 		var points = []
-		old_shape = npc.get_node("Area2D/CollisionShape2D").shape
-		var new_shape = CircleShape2D.new()
-		new_shape.radius = current_radius #The size that you want
-		old_shape = new_shape
+		old_shape = npc.get_node("Area2D/CollisionShape2D")
+		old_shape.shape.set_radius(current_radius)
+		
 		
 		for i in range(segments):
 			var angle = 2 * PI * i / segments
