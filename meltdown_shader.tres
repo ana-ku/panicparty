@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dwksxedlavi0l"]
+
+[ext_resource type="Shader" path="res://meltdown_shader.gdshader" id="1_yerip"]
+
+[resource]
+shader = ExtResource("1_yerip")
+shader_parameter/progress = 0.0
+shader_parameter/meltiness = 1.0

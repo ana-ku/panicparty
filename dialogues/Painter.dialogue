@@ -25,20 +25,36 @@ Painter: "Hello, I need your advice on my newest project!"
 					(He left you. You feel bad for his next muse.)
 				- Exactly!
 					Painter: *(He blushes and rushes to the bedroom. You are lucky, as the bedroom is not near the toilets.)*
-- I have never been a muse!
-    Painter: "Me neither! We have so much in common!"
-    - Can I be your muse after a bathroom break?
-        Painter: "No breaks! We have to paint now!"
-        - I AM GOING TO THE BATHROOM!
-            Painter: "Yes, that’s the energy! The emotions! You are perfect!"
-            (What a dick.)
-            - Kick him PERFECTLY
-                (With the sound of the smallest violence, you escape from him. Ouch.)
-            - Try to run away from him
-                (You turn and make a run for it, hoping he won’t follow. Luckily, you’re right, and you get away.)
-        - I will BREAK you!
-            Painter: "Yes, that’s the energy! The emotions! You are perfect!"
-            (He’s so astounded by your intensity that he doesn’t even try to stop you as you walk away.)
+	- I have never been a muse!
+		Painter: "Me neither! We have so much in common!"
+		- "I have standards, you know."  
+			Painter: (Raises an eyebrow, clearly intrigued.)  
+			"Standards? Fascinating! Let me guess—you’ll only pose if there’s a chandelier, a fog machine, and perhaps... a live peacock?"  
+			(They look at you eagerly, waiting for your demands.)  
+			- "Exactly, add a golden throne too."  
+				Painter: (Laughs maniacally.)  
+				"Yes! A golden throne! Oh, this will be the most extravagant portrait the world has ever seen!"  
+				(They wander off to gather supplies, leaving you free to escape.)  
+			- "Actually, I just want to be left alone."  
+				Painter: (Sighs dramatically, putting down their sketchbook.)  
+				"Alone? Why you did not tell me that earlier? That’s such a shame. You have the perfect energy for a masterpiece."  
+				(They reluctantly step aside, letting you leave.)
+		- "Sure, but only if I can pose in the bathroom for two hours alone."  
+			Painter: (Pauses, tilting their head thoughtfully.)  
+			"In the bathroom? Intriguing. A statement on privacy and vulnerability, perhaps? Yes, yes, I can see it now! Go my beautfil muse!"  
+			(They start muttering about metaphors, giving you the perfect chance to slip away unnoticed.)  
+	- Can I be your muse after a bathroom break?
+		Painter: "No breaks! We have to paint now!"
+		- I AM GOING TO THE BATHROOM!
+			Painter: "Yes, that’s the energy! The emotions! You are perfect!"
+			(What a dick.)
+			- Kick him PERFECTLY
+				(With the sound of the smallest violence, you escape from him. Ouch.)
+			- Try to run away from him
+				(You turn and make a run for it, hoping he won’t follow. Luckily, you’re right, and you get away.)
+			- I will BREAK you!
+				Painter: "Yes, that’s the energy! The emotions! You are perfect!"
+				(He’s so astounded by your intensity that he doesn’t even try to stop you as you walk away.)
 - Just paint nude.
 	Painter: "What a brilliant idea! But who should be nude, me or my muse?"
 	- You should be nude.

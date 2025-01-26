@@ -16,15 +16,19 @@ var collision_shape_podcaster
 var current_radius = min_radius  # Aktuální poloměr
 var time_passed = 0.0  # Čas od spuštění
 
-var victory_panel
+@onready var player = $Player
+@onready var losing_panel = $LosingPanel
+@onready var bg_shader = $BG_shader
+
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _ready():
+	losing_panel.visible = false
+	bg_shader.visible = false
+	
 	var bus_index = AudioServer.get_bus_index("Master")
 	var effect_index = 0
 	var spectrum_analyzer = AudioServer.get_bus_effect_instance(bus_index, effect_index)
-	victory_panel = $Panel
-	victory_panel.visible = false
 	polygon = get_node("painter/Polygon2D")
 	polygon.color = Color(0.6, 0.6, 1.0, 0.5)
 	polygon_butterfly_catcher = get_node("butterfly_catcher/Polygon2D")
@@ -83,3 +87,15 @@ func update_circle():
 	
 	collision_shape_podcaster = get_node("podcaster/Area2D/CollisionShape2D")
 	collision_shape_podcaster.shape.radius = current_radius
+
+func _on_player_resilience_depleted():
+	losing_panel.visible = true
+	player.can_move = false
+	bg_shader.visible = true
+	print("resilience depleted!")
+	
+func _on_replay_pressed():
+	# Reload the current scene
+	print("tlačítko zmáčknuto")
+	bg_shader.visible = false
+	get_tree().reload_current_scene()

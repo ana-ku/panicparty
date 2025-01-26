@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://3b671kw2fdtb"
+path="res://.godot/imported/Mary_Shelley.dialogue-375bb50e795ebf42941531939adf7c6d.tres"
+
+[deps]
+
+source_file="res://dialogues/Mary_Shelley.dialogue"
+dest_files=["res://.godot/imported/Mary_Shelley.dialogue-375bb50e795ebf42941531939adf7c6d.tres"]
+
+[params]
+
+defaults=true

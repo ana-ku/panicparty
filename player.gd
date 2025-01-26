@@ -13,6 +13,7 @@ var intro_texts = [
 ]
 
 signal resilience_decreased(position_on_gradient)
+signal resilience_depleted
 
 var position_on_gradient : float
 var can_move = true
@@ -109,6 +110,8 @@ func count_resilience(_lines):
 	print("Max resilience: ", max_resilience)
 	change_color_protective_bubble(current_resilience)
 	emit_signal("resilience_decreased", position_on_gradient)
+	if current_resilience == 0:
+		emit_signal("resilience_depleted")
 	
 	
 func change_color_protective_bubble(current_resilience):

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://iwdgx8xkgnen"
+path="res://.godot/imported/GameJammer.dialogue-fbc9bf6de17f6779ace368e528d5c56a.tres"
+
+[deps]
+
+source_file="res://dialogues/GameJammer.dialogue"
+dest_files=["res://.godot/imported/GameJammer.dialogue-fbc9bf6de17f6779ace368e528d5c56a.tres"]
+
+[params]
+
+defaults=true

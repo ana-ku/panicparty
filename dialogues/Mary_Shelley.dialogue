@@ -1,0 +1,78 @@
+~ Mary_Shelley
+(Among the lively chatter and clinking glasses of the party, a pale woman in elegant, old-fashioned attire approaches you. Her presence feels slightly otherworldly—she is unmistakably the ghost of Mary Shelley. Her dark eyes gleam with curiosity, and her lips curl into a faint, knowing smile.)
+Mary Shelley: "Frankenstein. Who is he to you?"
+- The doctor
+	Mary Shelley: (Her head tilts slightly, her voice calm and sharp.) "Victor Frankenstein—the man who challenged the laws of life and death. Tell me, are you like him? A creator... or a fool?"
+	(The chill in the air deepens as her gaze holds yours.)
+	- Creator
+		Mary Shelley: (Her eyes light up, and she leans in eagerly.) "A creator? Fascinating. Tell me, what do you create? Worlds? Monsters? Or awkward small talk at parties?"
+		(She raises an eyebrow, her tone dripping with dry humor, as she waits for your response.)
+		- I am a scientist
+			(The door bursts open before she can respond. Your creation—massive, grotesque, and oddly loyal—charges in.)
+			Mary Shelley: "Why did you give it genitals? And why didn’t you stick with just one?!"
+			(She crosses her arms, waiting for an explanation.)
+			- "I couldn’t decide!"
+				Mary Shelley: (Sighs, shaking her head.) "Indecision is the death of science. I have no time for such nonsense."
+				(She steps aside as your creature gently scoops you up and carries you out of the room. Escape achieved, but at what cost?)
+			- "Best of both worlds, am I right?"
+				Mary Shelley: (Pauses, then bursts into laughter.) "A bold choice! Perhaps Victor could have learned something from you after all."
+				(She waves you off as your creature eagerly leads you out, proud of its dual anatomy. You escape while she’s still chuckling.)
+			- "Monster, take Mary as your bride!"
+				Mary Shelley: (Raises an eyebrow, her tone icy.) "Do not mistake me for your creation’s plaything."
+				(The creature seems confused but ultimately agrees and leaves. Mary turns her piercing gaze back to you.)
+				- "So... do you, uh, wanna hang out sometime?"
+					Mary Shelley: (Her expression softens, a faint smirk playing on her lips.) "Bold of you to ask after that fiasco. Very well. But only if you promise not to create more abominations. One of you is quite enough."
+					(She steps aside, allowing you to leave—but not before giving you a lingering, knowing look.)
+				- "I should probably leave now."
+					Mary Shelley: (Crosses her arms, watching you with an amused expression.) "A wise choice. Go ahead. But remember, I’ll be keeping an eye on your... *progress.*"
+					(She steps aside, her gaze following you as you hastily make your exit.)
+	- Fool
+		Mary Shelley: (Her smile vanishes, replaced by a look of disgust.) "Finally, some honesty. At least Victor tried."
+		(She turns on her heel and walks away, leaving you in awkward silence—and with a faint sense of shame.)
+	- (Point at ghost of Jules Verne)
+		Mary Shelley: (With rage worthy of Caliban.) "Not him! Everyone thinks he created sci-fi, while I..."
+		(As Mary’s tirade grows louder, you take the opportunity to quietly slip away like a socially awkward ninja. Jules Verne gives you a knowing nod before vanishing into the punch bowl conversation.)
+- The monster
+	Mary Shelley: (Her smile vanishes instantly, replaced by a glare that could freeze fire.)
+	"The monster? Truly? Such a horrific misconception."
+	(She crosses her arms, her tone biting.) "It seems the world remains blind to the true tragedy of my work. Tell me, mortal..." (Her eyes narrow.) "Have you even read my book, or do you just parrot what others tell you?"
+	- Yes
+		Mary Shelley: (Her eyes narrow further, skeptical.) "Of course you have. And I suppose you completely understood its nuances, didn’t you?"
+		(She turns sharply and walks away, muttering something about “hopeless mortals.”)
+	- No
+		Mary Shelley: (Gasps dramatically, clutching her chest as if physically wounded.)
+		"Unbelievable! I must excuse myself to go spin in my grave!"
+		(With a theatrical turn, she glides away, shaking her head in despair and muttering about the downfall of humanity.)
+- You are a ghost!
+	Mary Shelley: (Laughs softly.) "Yes, and yet here I am, asking you questions, while you tremble in awe. Any other boring revelations you have?"
+	(A faint smile plays on her lips, but her eyes are unyielding.)
+	- Can ghosts get drunk?
+		Mary Shelley: (Raises an eyebrow, amused.) "Not on wine, but ignorance has quite the intoxicating effect."
+		(She vanishes into the crowd with a smirk, leaving you unsure if you were just insulted or entertained.)
+	- Did you really lose your virginity on your mother’s grave?
+		Mary Shelley: (Her smile disappears instantly. Her eyes widen, a flicker of shock crossing her face before it’s replaced by cold fury.)
+		"Who told you that? Byron? The man couldn’t keep his mouth shut if his life depended on it."
+		- "It was him!"
+			Mary Shelley: "Of course it was! That shameless, gossiping cadaver!"
+			(She whirls dramatically, her ghostly form almost crackling with anger.)
+			"I must pay him a visit. The dead have no rest while I still walk these halls."
+			(With a swirl of shadows, she vanishes, muttering Byron’s name like a curse. You stand there awkwardly, grateful to escape her attention.)
+		- "Byron didn’t tell me anything!"
+			Mary Shelley: (Steps closer, her voice dripping with mockery.) "Then how do you know, little stalker?"
+			(She grins wickedly.) "Don’t worry, I’ll be there to watch your first time. Closely."
+			(Her laughter rings in your ears as the room grows darker. Game over. You’re haunted forever.)
+	- So... do you haunt people for fun, or is it more of a full-time job?
+		Mary Shelley: (Her smile widens, and she lets out a soft laugh.)
+		"Oh, it’s both. But tonight, I find myself particularly drawn to... you. Let’s see how entertaining you can be."
+		- Make shadow puppets.
+			Mary Shelley: (Raises an eyebrow, then bursts into unexpected laughter.) "Pathetic."
+			(She leaves you, just like your mother did when you made shadow puppets at your father’s funeral.)
+		- Try to scare her back.
+			Mary Shelley: (Her expression turns icy, her eyes narrowing dangerously.) "Foolish mortal."
+			(With a flick of her wrist, the room goes pitch black.)
+			(Game over. You’re now the one being haunted.)
+		- Try to banish her.
+			Mary Shelley: (Recoils in shock.) "What... what are you doing?! Enough!"
+			(She flickers, then vanishes in a huff.) "Foolish mortal!"
+			(You stand victorious, tired but proud.)
+=> END
