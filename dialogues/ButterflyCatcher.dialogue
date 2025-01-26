@@ -5,18 +5,18 @@ Butterfly Collector: "Ah, perfect timing! I don’t think I’ve shared the wond
 	- "No, I really need to leave right now."
 		Butterfly Collector: "Leave? But what could possibly be more important than butterflies? Surely you’re joking!"
 		(He crosses his arms, blocking your path and waiting for an explanation.)
-		- "Moths are planning a coup!"
+		- Moths are planning a coup!
 			Butterfly Collector: "A coup? Against butterflies?! This is a disaster! Go, defend them! Quickly!"  
 			(He steps aside, and you make your escape.)
-		- "Please, just let me go."
+		- Please, just let me go.
 			Butterfly Collector: "Hm... Butterflies do value freedom. Fine, go. But come back later!"  
 			(He steps aside, and you make your escape.)
 	- Yes! Hunt butterflies!
 		Butterfly Collector: "Why, may I ask?"
-		- "I love them!"
-			Butterfly Collector: "Ah, a true butterfly admirer! Go, then, and enjoy their beauty!"  
+		- I love them!
+			Butterfly Collector: "Aha, a true butterfly admirer! Go, then, and enjoy their beauty!"  
 			(He steps aside, clearly pleased, and you slip away.)
-		- "I want to annihilate them!"
+		- I want to annihilate them!
 			Butterfly Collector: "Annihilate them? That’s absurd! Butterflies are the essence of beauty and life itself!"  
 			(He begins pacing, passionately defending butterflies.)
 			- "Okay, I don’t want to annihilate butterflies anymore."
@@ -25,9 +25,6 @@ Butterfly Collector: "Ah, perfect timing! I don’t think I’ve shared the wond
 			- "I heard the host of this party put butterflies in the mini burgers."
 				Butterfly Collector: "WHAT?! That monster! I must confront them immediately!"  
 				(He storms off, leaving you free to escape.)
-			- "What if butterflies are just nature’s glitter?"
-				Butterfly Collector: "Nature’s... glitter? That’s... blasphemous! But intriguing. Explain yourself!"  
-				(He sits down cross-legged on the floor, ready for a philosophical discussion, trapping you in his curiosity.)
 - Wouldn’t you rather have punch than talk to me?
 	Butterfly Collector: "Oh no, not really. I was too busy thinking about butterflies. But now that you mention it, the punch reminds me of the crimson red of the Scarlet Mormon butterfly..."
 	(The conversation drags on, and you start regretting life decisions.)
@@ -37,26 +34,26 @@ Butterfly Collector: "Ah, perfect timing! I don’t think I’ve shared the wond
 	- "I think someone spilled punch on the Scarlet Tablecloth Butterfly!"
 		Butterfly Collector: "Spilled punch? That’s horrifying! But wait—there’s no such thing as a Scarlet Tablecloth Butterfly... or is there?!"  
 		(He starts flipping through his butterfly notes in confusion, giving you just enough time to slip away unnoticed.)
-		- Butterflies can be red?
-			Butterfly Collector: Oh, my dear friend, you have so much to learn! Let me show you something."  
-			(He starts pointing to objects to explain butterfly colors.)
-			- "Look, that vase over there! It reminds me of a butterfly too."
-				Butterfly Collector: "Yes, exactly! You’re starting to see the beauty of it now!"  
-				(While he focuses on the vase, you quietly escape to the bathroom.)
-			- "I need to go while you’re not looking!"
-				Butterfly Collector: "Ah, wait! You can’t leave yet. I haven’t even shown you my butterfly photos!"  
-				(He gently pulls you back, and you’re trapped.)
+	- Butterflies can be red?
+		Butterfly Collector: Oh, my dear friend, you have so much to learn! Let me show you something."  
+		(He starts pointing to objects to explain butterfly colors.)
+		- Look, that vase over there! It reminds me of a butterfly too.
+			Butterfly Collector: "Yes, exactly! You’re starting to see the beauty of it now!"  
+			(While he focuses on the vase, you quietly escape to the bathroom.)
+		- I need to go while you’re not looking!
+			Butterfly Collector: "Ah, wait! You can’t leave yet. I haven’t even shown you my butterfly photos!"  
+			(He starts to looking for his phone, but you managed to run away..)
 - Behind you!
 	Butterfly Collector: "What?"
 	- Just point and scream.
 		(He turns around, and you use the moment to escape.)
-	- "A moth!"
+	- A moth!
 		Butterfly Collector: "Where? I must destroy it!"  
 		(He turns around, giving you the perfect chance to escape.)
-	- "A butterfly!"
+	- A butterfly!
 		Butterfly Collector: "Butterflies are sleeping. Did they not teach you that in school? When I was your age..."  
 		(The torment of his lecture is long and painful, and you grow to hate butterflies.)
-		- "Can I go now?"
+		- Can I go now?
 			Butterfly Collector: "Where would you go? I have pictures of butterflies on my phone. Give me a minute!"  
 			- Run.
 				(You successfully run away. You will never see butterfly in your life.)
@@ -66,15 +63,15 @@ Butterfly Collector: "Ah, perfect timing! I don’t think I’ve shared the wond
 					(He is alarmed by your claim and immidietaly deletes the photo. He cannot look you in the eyes, not now. You take your leave.)
 				- Make secret alliance with moth devil to save you.
 					(Moths are wild creatures, but always honor their word. Words cannot describe what happened next. But you can go, souless but free.)
-		- "I once caught a butterfly with a spoon!"
+		- I once caught a butterfly with a spoon!
 			Butterfly Collector: "A spoon? Amateur! I once caught a Swallowtail blindfolded, standing on one leg during a thunderstorm."  
 			(He begins an epic tale of his adventures, trapping you in butterfly hell.)
-			- "That’s impressive! Tell me more."
+			- That’s impressive! Tell me more.
 				Butterfly Collector: "Ah, now you understand the craft. Sit down. I’ll tell you everything!"  
-				(You’re stuck listening forever.)
-			- "Oh yeah? I wrestled a Moth King once."
+				(It turned out that he doesn´t need someone to talk with about butterflies. He will manage whole conversation while you sneak away.)
+			- Oh yeah? I wrestled a Moth King once.
 				Butterfly Collector: "The Moth King?! Impossible! "  
 				(He bows in respect as you casually walk away.)
-		- "I just ate one of your butterflies!"
+		- I just ate one of your butterflies!
 			Butterfly Collector: "WHAT?! YOU ATE A BUTTERFLY?!"  
 			(He pales, gags, and rushes to vomit. You bolt for freedom.)

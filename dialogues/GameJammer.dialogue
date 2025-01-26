@@ -4,9 +4,9 @@ Game Jammer: "Hello, may I talk with you about my game?"
 - "Not really."
 	Game Jammer: "Do not worry, it will not take much of your precious time, see..."
 	(Damn, he will not stop until he explains why he was not able to deliver his MMO in 48 hours!)
-	- "It is not your fault!"
+	- "It is not your fault! The Game Jam ruined you!"
 		Game Jammer: (His eyes widen, brimming with emotion.) "Really? You mean that? Nobody has ever said that before!"
-	 	Game Jammer: (He suddenly grabs his phone and starts dialing.) "I need to call my dad and tell him everything’s okay now."
+		Game Jammer: (He suddenly grabs his phone and starts dialing.) "I need to call my dad and tell him everything’s okay now."
 		(You use the opportunity to slip away. Escape successful.)
 	- "Your game is trash!"
 		Game Jammer: (Gasps dramatically.) "Trash?! Trash?! Nobody appreciates my work! You probably didn’t even try it, did you?"
@@ -20,9 +20,6 @@ Game Jammer: "Hello, may I talk with you about my game?"
 		- "Actually, I didn’t play it."
 			Game Jammer: (Pauses, staring at you in disbelief.) "You didn’t even try it?! Then how can you judge it?!"
 			(He starts ranting about how "nobody understands real visionaries," giving you time to vanish into the crowd.)
-	- "You could use more microtransactions!"
-		Game Jammer: "Oh yes! The secret recipe for game success! Great idea!"
-		(When he gives his first example of a microtransaction, a wild crowd of players storms in and beats him up. You escape during the chaos.)
 	- "I think you  need therapy."
 		Game Jammer: (Freezes, staring at you in horror.) "Therapy? Therapy?! I’m not the problem here—you are!"
 		(He launches into a tirade about how society stifles creativity. You’re trapped listening, but maybe you can steer the conversation...)
@@ -66,6 +63,9 @@ Game Jammer: "Hello, may I talk with you about my game?"
 			- "Never mind. I have to go."
 				Game Jammer: "Go?! But we haven’t even started brainstorming DLCs yet!"
 				(He looks heartbroken as he tries to block your path. His soft gamer hands could not stop you.)
+			- "You could use more microtransactions!"
+				Game Jammer: "Oh yes! The secret recipe for game success! Great idea!"
+				(When he gives his first example of a microtransaction, a wild crowd of players storms in and beats him up. You escape during the chaos.)
 		- "Yes, go to garage and wait for me!."
 			Game Jammer: (He starts jumping with exitement.) "Oh my god, yes, yes!!!"
 			(He started to run away, but after five second he felt to groun with exhaustion. He is more numb than his gameplay.)
@@ -76,20 +76,19 @@ Game Jammer: "Hello, may I talk with you about my game?"
 		Game Jammer: (Gasps, then bursts into tears.) "No! Even my mom?!"
 		(He collapses into a chair, utterly defeated. You slip away in the chaos.)
 	- "No, I meant I slept with someone else’s mom."
-	Game Jammer: (Sighs in relief.) "Oh, good. Wait, what?! That’s still weird! With whose mother did you sleep?"
-	(Wow, this is just weird.)
-	- "Mother of Ants!"
-		Game Jammer: (Pauses, blinking in confusion.) "The... Mother of Ants? What kind of insane metaphor is that?!"
-		(Suddenly, the lights in the room flicker and shift to an eerie purple glow. From the shadows, a massive, serpentine figure slithers into view—its scales glimmering with an unearthly sheen.)
-		Game Jammer: (Game Jammer’s eyes widen in absolute terror as someone whispers, "Behold, Myrmecia, the true Mother of Ants!") "This is not happening! This is NOT happening!"
-		(In his blind panic, he stumbles over a chair and bolts for the nearest exit. You are free, but full of cherish memories of that beautiful night.)
-	- "Your mom’s mother!"
-		Game Jammer: (Gasps, his face contorting in shock and anger.) "My grandmother?! How dare you!"
-		Game Jammer: (He tries to punch you, but his fragile gamer hands buckle under the impact, and he yelps in pain.) "My hand! My precious hand! I can’t code like this!"
-		(While he cradles his hand dramatically, you casually walk away, free from his rambling forever.)
-	- "MINE!"
-		Game Jammer: (Freezes, staring at you in pure disbelief.) "Your own mom?! That’s... that’s so messed up, even for this conversation!"
-		(His face flushes, and his knees wobble as he tries to process the sheer absurdity of what you just said before he finally faints.)
-		(The other partygoers glance at him in confusion, but nobody intervenes. While he’s unconscious, you quietly sneak away, completely free of his rambling.)
-
+		Game Jammer: (Sighs in relief.) "Oh, good. Wait, what?! That’s still weird! With whose mother did you sleep?"
+		(Wow, this is just weird.)
+		- "Mother of Ants!"
+			Game Jammer: (Pauses, blinking in confusion.) "The... Mother of Ants? What kind of insane metaphor is that?!"
+			(Suddenly, the lights in the room flicker and shift to an eerie purple glow. From the shadows, a massive, serpentine figure slithers into view—its scales glimmering with an unearthly sheen.)
+			Game Jammer: (Game Jammer’s eyes widen in absolute terror as someone whispers, "Behold, Myrmecia, the true Mother of Ants!") "This is not happening! This is NOT happening!"
+			(In his blind panic, he stumbles over a chair and bolts for the nearest exit. You are free, but full of cherish memories of that beautiful night.)
+		- "Your mom’s mother!"
+			Game Jammer: (Gasps, his face contorting in shock and anger.) "My grandmother?! How dare you!"
+			Game Jammer: (He tries to punch you, but his fragile gamer hands buckle under the impact, and he yelps in pain.) "My hand! My precious hand! I can’t code like this!"
+			(While he cradles his hand dramatically, you casually walk away, free from his rambling forever.)
+		- "MINE!"
+			Game Jammer: (Freezes, staring at you in pure disbelief.) "Your own mom?! That’s... that’s so messed up, even for this conversation!"
+			(His face flushes, and his knees wobble as he tries to process the sheer absurdity of what you just said before he finally faints.)
+			(The other partygoers glance at him in confusion, but nobody intervenes. While he’s unconscious, you quietly sneak away, completely free of his rambling.)
 => END

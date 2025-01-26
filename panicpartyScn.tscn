@@ -1399,7 +1399,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="painter" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(710, 343)
+position = Vector2(709, 335)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("11_ak0q7")
 dialogue_start = "painter"
@@ -1417,7 +1417,7 @@ frame_progress = 0.308334
 [node name="Area2D" type="Area2D" parent="painter"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="painter/Area2D"]
-position = Vector2(-3, -15)
+position = Vector2(0, -3)
 shape = SubResource("CircleShape2D_m1usl")
 
 [node name="Polygon2D" type="Polygon2D" parent="painter"]
@@ -1528,7 +1528,7 @@ offset_top = -87.0
 offset_right = 101.0
 offset_bottom = -32.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_wh6do")
-text = "It was calm party...
+text = "It was a calm party...
 Wait! You!"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1630,7 +1630,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ex" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(926, 562)
+position = Vector2(884, 558)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("23_kbc4g")
 dialogue_start = "expartner"
@@ -1686,14 +1686,14 @@ YOU WON!"
 label_settings = SubResource("LabelSettings_bvc6h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="VictoryArea"]
-position = Vector2(1308, 649)
+position = Vector2(1305, 647)
 shape = SubResource("RectangleShape2D_1m6f4")
 
 [node name="ToiletLabel" type="Label" parent="VictoryArea"]
-offset_left = 1263.0
-offset_top = 569.0
-offset_right = 1358.0
-offset_bottom = 728.0
+offset_left = 1261.0
+offset_top = 575.0
+offset_right = 1356.0
+offset_bottom = 734.0
 scale = Vector2(1.00503, 1)
 text = "Toilet 
 safe 

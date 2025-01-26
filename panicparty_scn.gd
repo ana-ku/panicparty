@@ -73,7 +73,6 @@ func color_polygons():
 	for npc in get_tree().get_nodes_in_group("npcs"):
 		polygon = npc.get_node("Polygon2D")
 		var random_float = round(randf() * 10) / 10.0
-		print("Random float: ", random_float)
 		polygon.color = Color(random_float, 0.6, 1.0, 0.5)
 
 		
@@ -105,10 +104,8 @@ func _on_player_resilience_depleted():
 	losing_panel.visible = true
 	player.can_move = false
 	bg_shader.visible = true
-	print("resilience depleted!")
 	
 func _on_replay_pressed():
 	# Reload the current scene
-	print("tlačítko zmáčknuto")
 	bg_shader.visible = false
 	get_tree().reload_current_scene()
