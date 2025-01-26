@@ -39,6 +39,9 @@ func _ready():
 var low_band_energy: float = 0.0
 
 func _process(delta):
+	time_passed += delta * oscillation_speed
+	current_radius = lerp(min_radius, max_radius, (sin(time_passed) + 1) / 2)
+	
 	update_circle()
 
 	audio_player = get_node("/root/Node2D/BackgroundMusic")
@@ -62,8 +65,7 @@ func _process(delta):
 			if light is PointLight2D:
 				light.energy = lerp(light.energy, low_band_energy * 5.0, 0.2) # Efekt blikání		
 
-	time_passed += delta * oscillation_speed
-	current_radius = lerp(min_radius, max_radius, (sin(time_passed) + 1) / 2)
+	
 
 
 func color_polygons():
@@ -83,19 +85,22 @@ func color_polygons():
 	
 func update_circle():
 	for npc in get_tree().get_nodes_in_group("npcs"):
-		var shape_radius
+		var old_shape
 		var points = []
+		old_shape = npc.get_node("Area2D/CollisionShape2D").shape
+		var new_shape = CircleShape2D.new()
+		new_shape.radius = current_radius #The size that you want
+		old_shape = new_shape
+		
 		for i in range(segments):
 			var angle = 2 * PI * i / segments
 			var x = current_radius * cos(angle)
 			var y = current_radius * sin(angle)
 			points.append(Vector2(x, y))
 		polygon = npc.get_node("Polygon2D")
-		shape_radius = npc.get_node("Area2D/CollisionShape2D").shape.radius
 		polygon.polygon = points
-		shape_radius = current_radius
-		print("shape_radius: ", shape_radius)
-		print("current_radius: ", current_radius)
+		
+		
 
 func _on_player_resilience_depleted():
 	losing_panel.visible = true

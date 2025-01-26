@@ -8,7 +8,7 @@ extends CharacterBody2D
 
 
 var intro_texts = [
-	"I NEED a fucking breather...",
+	"I NEED a f@cking breather...",
 	"I'm about to have a panic attack."
 ]
 

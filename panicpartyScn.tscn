@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=4 uid="uid://c2mpk37hk11tu"]
+[gd_scene load_steps=96 format=4 uid="uid://c2mpk37hk11tu"]
 
 [ext_resource type="Texture2D" uid="uid://b7y1o5y8h8tiq" path="res://assets/kenney_pixel-ui-pack/9-Slice/Colored/blue_pressed.png" id="1_e5isc"]
 [ext_resource type="Script" path="res://panicparty_scn.gd" id="1_xr3gr"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://cpb5u1ex8yyr6" path="res://assets/meltdown_texture.tres" id="21_gbs67"]
 [ext_resource type="Texture2D" uid="uid://cakk1q88i31tc" path="res://assets/sprites/icons8-arrow-48.png" id="22_2gxij"]
 [ext_resource type="Resource" uid="uid://cblpojc8kv6tl" path="res://dialogues/Psychologist.dialogue" id="22_gbdjg"]
+[ext_resource type="Resource" uid="uid://of5bk0qjkgcg" path="res://dialogues/Ex.dialogue" id="23_kbc4g"]
 [ext_resource type="Shader" path="res://panicpartyScn.gdshader" id="24_oe1hp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8j7v"]
@@ -861,8 +862,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0212i"]
-radius = 63.0
-height = 138.0
+radius = 64.0
+height = 128.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ke30u"]
 content_margin_left = 3.0
@@ -1018,6 +1019,9 @@ font_size = 116
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1m6f4"]
 size = Vector2(103, 160)
 
+[sub_resource type="LabelSettings" id="LabelSettings_1k647"]
+font_size = 26
+
 [sub_resource type="LabelSettings" id="LabelSettings_monn0"]
 font_color = Color(0, 0, 0, 1)
 
@@ -1026,9 +1030,6 @@ font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_16aps"]
 size = Vector2(79, 184.5)
-
-[sub_resource type="LabelSettings" id="LabelSettings_1k647"]
-font_size = 26
 
 [sub_resource type="Gradient" id="Gradient_bpqd5"]
 offsets = PackedFloat32Array(0, 0.896104)
@@ -1040,12 +1041,11 @@ fill = 1
 fill_from = Vector2(0.504587, 0.497706)
 fill_to = Vector2(0.889908, 0.899083)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_325vt"]
-bg_color = Color(0.745098, 0, 0, 0.737255)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_df3rg"]
+bg_color = Color(1, 0, 0, 0.709804)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g8ndt"]
+font_size = 74
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3gnf"]
 content_margin_left = 4.0
@@ -1057,9 +1057,6 @@ corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
-
-[sub_resource type="LabelSettings" id="LabelSettings_2k3v4"]
-font_size = 60
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sjnsx"]
 shader = ExtResource("24_oe1hp")
@@ -1084,7 +1081,7 @@ tile_map_data = PackedByteArray("AADj//n/CAADAAIAAADj//r/CAADAAIAAADj//v/CAADAAI
 tile_set = SubResource("TileSet_jvp5i")
 
 [node name="Player" type="CharacterBody2D" parent="."]
-z_index = 2
+z_index = 1
 material = SubResource("ShaderMaterial_l14h1")
 position = Vector2(129, 136)
 script = ExtResource("2_mjwrh")
@@ -1109,7 +1106,7 @@ default_color = Color(1, 1, 0, 1)
 offset_left = -61.0
 offset_top = -112.0
 offset_right = 68.0
-offset_bottom = -84.0
+offset_bottom = -79.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_ke30u")
 label_settings = SubResource("LabelSettings_4g727")
 horizontal_alignment = 1
@@ -1140,6 +1137,7 @@ shape = SubResource("CircleShape2D_m1usl")
 [node name="Polygon2D" type="Polygon2D" parent="painter"]
 
 [node name="Label" type="Label" parent="painter"]
+z_index = 1
 offset_left = -55.0
 offset_top = -87.0
 offset_right = 63.0
@@ -1175,6 +1173,8 @@ shape = SubResource("CircleShape2D_m1usl")
 [node name="Polygon2D" type="Polygon2D" parent="nun"]
 
 [node name="Label" type="Label" parent="nun"]
+z_index = 1
+z_as_relative = false
 offset_left = -54.0
 offset_top = -87.0
 offset_right = 64.0
@@ -1345,28 +1345,30 @@ Too many sociopaths."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="podcaster5" type="CharacterBody2D" parent="." groups=["npcs"]]
+[node name="ex" type="CharacterBody2D" parent="." groups=["npcs"]]
 position = Vector2(430, 83)
 script = ExtResource("10_dftew")
-dialogue_resource = ExtResource("15_xcvc7")
-dialogue_start = "truecrime"
+dialogue_resource = ExtResource("23_kbc4g")
+dialogue_start = "expartner"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="podcaster5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ex"]
 shape = SubResource("CapsuleShape2D_kno62")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="podcaster5"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ex"]
 z_index = 1
 position = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_pqak8")
 
-[node name="Area2D" type="Area2D" parent="podcaster5"]
+[node name="Area2D" type="Area2D" parent="ex"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="podcaster5/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ex/Area2D"]
 shape = SubResource("CircleShape2D_m1usl")
 
-[node name="Polygon2D" type="Polygon2D" parent="podcaster5"]
+[node name="Polygon2D" type="Polygon2D" parent="ex"]
 
-[node name="Label" type="Label" parent="podcaster5"]
+[node name="Label" type="Label" parent="ex"]
+z_index = 1
+z_as_relative = false
 offset_left = -55.0
 offset_top = -87.0
 offset_right = 101.0
@@ -1400,8 +1402,23 @@ YOU WON!"
 label_settings = SubResource("LabelSettings_bvc6h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="VictoryArea"]
-position = Vector2(1308, 646)
+position = Vector2(1308, 649)
 shape = SubResource("RectangleShape2D_1m6f4")
+
+[node name="ToiletLabel" type="Label" parent="VictoryArea"]
+offset_left = 1263.0
+offset_top = 569.0
+offset_right = 1358.0
+offset_bottom = 728.0
+scale = Vector2(1.00503, 1)
+text = "Toilet 
+safe 
+space"
+label_settings = SubResource("LabelSettings_1k647")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Meltdown_Meter" type="Control" parent="."]
 layout_mode = 3
@@ -1450,21 +1467,6 @@ debug_color = Color(0, 0.6, 0.701961, 0)
 position = Vector2(23, 163)
 rotation = -3.14159
 texture = ExtResource("22_2gxij")
-
-[node name="ToiletLabel" type="Label" parent="."]
-offset_left = 1088.0
-offset_top = 431.0
-offset_right = 1183.0
-offset_bottom = 590.0
-scale = Vector2(1.00503, 1)
-text = "Toilet 
-safe 
-space"
-label_settings = SubResource("LabelSettings_1k647")
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
-metadata/_edit_use_anchors_ = true
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_00urh")
@@ -1536,38 +1538,35 @@ texture = SubResource("GradientTexture2D_tlu6m")
 texture_scale = 3.14
 
 [node name="LosingPanel" type="CanvasLayer" parent="."]
+layer = 128
 visible = false
 
 [node name="Panel" type="Panel" parent="LosingPanel"]
-top_level = true
-offset_left = 158.0
-offset_top = 85.0
-offset_right = 197.0
-offset_bottom = 124.0
-scale = Vector2(22.1168, 13.1827)
-theme_override_styles/panel = SubResource("StyleBoxFlat_325vt")
+offset_left = 109.0
+offset_top = 48.0
+offset_right = 1140.0
+offset_bottom = 599.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_df3rg")
 
-[node name="Button" type="Button" parent="LosingPanel"]
+[node name="Label" type="Label" parent="LosingPanel/Panel"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 160.0
+offset_right = 927.0
+offset_bottom = 367.0
+text = "Meltdown is inevitable."
+label_settings = SubResource("LabelSettings_g8ndt")
+
+[node name="Button" type="Button" parent="LosingPanel/Panel"]
 top_level = true
-z_index = 4
-offset_left = 470.0
-offset_top = 370.0
-offset_right = 677.0
-offset_bottom = 433.0
+z_index = 1
+offset_left = 488.0
+offset_top = 378.0
+offset_right = 695.0
+offset_bottom = 441.0
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_q3gnf")
 text = "Play Again"
-
-[node name="Label" type="Label" parent="LosingPanel"]
-offset_left = 246.0
-offset_top = 181.0
-offset_right = 943.0
-offset_bottom = 350.0
-text = "You've got a meltdown. 
-But you can"
-label_settings = SubResource("LabelSettings_2k3v4")
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="BG_shader" type="ColorRect" parent="."]
 visible = false
@@ -1581,4 +1580,5 @@ offset_bottom = 672.0
 [connection signal="resilience_decreased" from="Player" to="Meltdown_Meter" method="_on_player_resilience_decreased"]
 [connection signal="resilience_depleted" from="Player" to="." method="_on_player_resilience_depleted"]
 [connection signal="body_entered" from="VictoryArea" to="VictoryArea" method="_on_body_entered"]
-[connection signal="button_down" from="LosingPanel/Button" to="." method="_on_replay_pressed"]
+[connection signal="body_shape_entered" from="VictoryArea" to="VictoryArea" method="_on_body_shape_entered"]
+[connection signal="button_down" from="LosingPanel/Panel/Button" to="." method="_on_replay_pressed"]
