@@ -8,7 +8,7 @@ extends CharacterBody2D
 
 
 var intro_texts = [
-	"I NEED to get out...",
+	"I NEED a fucking breather...",
 	"I'm about to have a panic attack."
 ]
 
@@ -110,7 +110,7 @@ func count_resilience(_lines):
 	print("Max resilience: ", max_resilience)
 	change_color_protective_bubble(current_resilience)
 	emit_signal("resilience_decreased", position_on_gradient)
-	if current_resilience == 0:
+	if current_resilience == Global.min_resilience:
 		emit_signal("resilience_depleted")
 	
 	

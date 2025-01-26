@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cblpojc8kv6tl"
+path="res://.godot/imported/Psychologist.dialogue-8a81d57da2f507acc2c95e0e9b195f64.tres"
+
+[deps]
+
+source_file="res://dialogues/Psychologist.dialogue"
+dest_files=["res://.godot/imported/Psychologist.dialogue-8a81d57da2f507acc2c95e0e9b195f64.tres"]
+
+[params]
+
+defaults=true

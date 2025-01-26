@@ -74,6 +74,8 @@ func _ready() -> void:
 	# Connect up the C# signals if need be
 	if DMSettings.check_for_dotnet_solution():
 		_get_dotnet_dialogue_manager().Prepare()
+		
+		
 
 
 ## Step through lines and run any mutations until we either hit some dialogue or the end of the conversation

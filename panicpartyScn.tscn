@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=4 uid="uid://c2mpk37hk11tu"]
+[gd_scene load_steps=95 format=4 uid="uid://c2mpk37hk11tu"]
 
 [ext_resource type="Texture2D" uid="uid://b7y1o5y8h8tiq" path="res://assets/kenney_pixel-ui-pack/9-Slice/Colored/blue_pressed.png" id="1_e5isc"]
 [ext_resource type="Script" path="res://panicparty_scn.gd" id="1_xr3gr"]
@@ -18,11 +18,15 @@
 [ext_resource type="Script" path="res://toggle_music_button.gd" id="11_jaguh"]
 [ext_resource type="Texture2D" uid="uid://c52g2bm2s86ys" path="res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/48x48/Char_005_Idle.png" id="12_wxaw0"]
 [ext_resource type="Resource" uid="uid://cyi12s1x7bb8g" path="res://dialogues/ButterflyCatcher.dialogue" id="13_n4co2"]
+[ext_resource type="Resource" uid="uid://l2hi5m1y7c0w" path="res://dialogues/Nun.dialogue" id="15_wf515"]
 [ext_resource type="Resource" uid="uid://cm3uej26814m2" path="res://dialogues/TrueCrimePodcaster.dialogue" id="15_xcvc7"]
 [ext_resource type="Script" path="res://victory_area.gd" id="17_wqp8q"]
+[ext_resource type="Resource" uid="uid://iwdgx8xkgnen" path="res://dialogues/GameJammer.dialogue" id="20_35twn"]
 [ext_resource type="Script" path="res://meltdown_meter.gd" id="21_6rqvh"]
+[ext_resource type="Resource" uid="uid://3b671kw2fdtb" path="res://dialogues/Mary_Shelley.dialogue" id="21_byue6"]
 [ext_resource type="Texture2D" uid="uid://cpb5u1ex8yyr6" path="res://assets/meltdown_texture.tres" id="21_gbs67"]
 [ext_resource type="Texture2D" uid="uid://cakk1q88i31tc" path="res://assets/sprites/icons8-arrow-48.png" id="22_2gxij"]
+[ext_resource type="Resource" uid="uid://cblpojc8kv6tl" path="res://dialogues/Psychologist.dialogue" id="22_gbdjg"]
 [ext_resource type="Shader" path="res://panicpartyScn.gdshader" id="24_oe1hp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8j7v"]
@@ -911,7 +915,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m1usl"]
-radius = 115.27
+radius = 105.7
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u168u"]
 content_margin_left = 3.0
@@ -1113,7 +1117,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="painter" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(534, 204)
+position = Vector2(668, 92)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("11_ak0q7")
 dialogue_start = "painter"
@@ -1141,14 +1145,49 @@ offset_top = -87.0
 offset_right = 63.0
 offset_bottom = -32.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_u168u")
-text = "There you are!
-Come here!"
+text = "I had a brush 
+with death!"
+label_settings = SubResource("LabelSettings_cg5w8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="nun" type="CharacterBody2D" parent="." groups=["npcs"]]
+position = Vector2(173, 502)
+script = ExtResource("10_dftew")
+dialogue_resource = ExtResource("15_wf515")
+dialogue_start = "Nun"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nun"]
+shape = SubResource("CapsuleShape2D_kno62")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="nun"]
+z_index = 1
+position = Vector2(4, -10)
+sprite_frames = SubResource("SpriteFrames_kyvby")
+frame = 3
+frame_progress = 0.308334
+
+[node name="Area2D" type="Area2D" parent="nun"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nun/Area2D"]
+shape = SubResource("CircleShape2D_m1usl")
+
+[node name="Polygon2D" type="Polygon2D" parent="nun"]
+
+[node name="Label" type="Label" parent="nun"]
+offset_left = -54.0
+offset_top = -87.0
+offset_right = 64.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_u168u")
+text = "Your outfit is 
+sacriligous!"
 label_settings = SubResource("LabelSettings_cg5w8")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="butterfly_catcher" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(905, 164)
+position = Vector2(1032, 55)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("13_n4co2")
 dialogue_start = "butterfly"
@@ -1173,13 +1212,13 @@ offset_top = -87.0
 offset_right = 93.0
 offset_bottom = -32.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_qb3ds")
-text = "Come and give me 
-a quick hello!"
+text = "Party with butter
+but no flies?"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="podcaster" type="CharacterBody2D" parent="." groups=["npcs"]]
-position = Vector2(637, 501)
+position = Vector2(446, 524)
 script = ExtResource("10_dftew")
 dialogue_resource = ExtResource("15_xcvc7")
 dialogue_start = "truecrime"
@@ -1205,8 +1244,135 @@ offset_top = -87.0
 offset_right = 101.0
 offset_bottom = -32.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_wh6do")
-text = "Aha! There you are,
-come and say hi!"
+text = "It was calm party...
+Wait! You!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="game_jammer" type="CharacterBody2D" parent="." groups=["npcs"]]
+position = Vector2(720, 539)
+script = ExtResource("10_dftew")
+dialogue_resource = ExtResource("20_35twn")
+dialogue_start = "game_jammer"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="game_jammer"]
+shape = SubResource("CapsuleShape2D_kno62")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="game_jammer"]
+z_index = 1
+position = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_pqak8")
+
+[node name="Area2D" type="Area2D" parent="game_jammer"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="game_jammer/Area2D"]
+shape = SubResource("CircleShape2D_m1usl")
+
+[node name="Polygon2D" type="Polygon2D" parent="game_jammer"]
+
+[node name="Label" type="Label" parent="game_jammer"]
+offset_left = -55.0
+offset_top = -87.0
+offset_right = 101.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wh6do")
+text = "Stupid bubbles,
+worst theme!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="mary_shelley" type="CharacterBody2D" parent="." groups=["npcs"]]
+position = Vector2(504, 357)
+script = ExtResource("10_dftew")
+dialogue_resource = ExtResource("21_byue6")
+dialogue_start = "Mary_Shelley"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mary_shelley"]
+shape = SubResource("CapsuleShape2D_kno62")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mary_shelley"]
+z_index = 1
+position = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_pqak8")
+
+[node name="Area2D" type="Area2D" parent="mary_shelley"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mary_shelley/Area2D"]
+shape = SubResource("CircleShape2D_m1usl")
+
+[node name="Polygon2D" type="Polygon2D" parent="mary_shelley"]
+
+[node name="Label" type="Label" parent="mary_shelley"]
+offset_left = -55.0
+offset_top = -87.0
+offset_right = 101.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wh6do")
+text = "Those live people
+make me sick."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="psychologist" type="CharacterBody2D" parent="." groups=["npcs"]]
+position = Vector2(1011, 311)
+script = ExtResource("10_dftew")
+dialogue_resource = ExtResource("22_gbdjg")
+dialogue_start = "Psychologist"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="psychologist"]
+shape = SubResource("CapsuleShape2D_kno62")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="psychologist"]
+z_index = 1
+position = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_pqak8")
+
+[node name="Area2D" type="Area2D" parent="psychologist"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="psychologist/Area2D"]
+shape = SubResource("CircleShape2D_m1usl")
+
+[node name="Polygon2D" type="Polygon2D" parent="psychologist"]
+
+[node name="Label" type="Label" parent="psychologist"]
+offset_left = -55.0
+offset_top = -87.0
+offset_right = 101.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wh6do")
+text = "I never liked parties.
+Too many sociopaths."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="podcaster5" type="CharacterBody2D" parent="." groups=["npcs"]]
+position = Vector2(430, 83)
+script = ExtResource("10_dftew")
+dialogue_resource = ExtResource("15_xcvc7")
+dialogue_start = "truecrime"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="podcaster5"]
+shape = SubResource("CapsuleShape2D_kno62")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="podcaster5"]
+z_index = 1
+position = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_pqak8")
+
+[node name="Area2D" type="Area2D" parent="podcaster5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="podcaster5/Area2D"]
+shape = SubResource("CircleShape2D_m1usl")
+
+[node name="Polygon2D" type="Polygon2D" parent="podcaster5"]
+
+[node name="Label" type="Label" parent="podcaster5"]
+offset_left = -55.0
+offset_top = -87.0
+offset_right = 101.0
+offset_bottom = -32.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wh6do")
+text = "I <3 U!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1370,8 +1536,10 @@ texture = SubResource("GradientTexture2D_tlu6m")
 texture_scale = 3.14
 
 [node name="LosingPanel" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Panel" type="Panel" parent="LosingPanel"]
+top_level = true
 offset_left = 158.0
 offset_top = 85.0
 offset_right = 197.0
@@ -1380,11 +1548,12 @@ scale = Vector2(22.1168, 13.1827)
 theme_override_styles/panel = SubResource("StyleBoxFlat_325vt")
 
 [node name="Button" type="Button" parent="LosingPanel"]
+top_level = true
 z_index = 4
-offset_left = 474.0
-offset_top = 117.0
-offset_right = 681.0
-offset_bottom = 180.0
+offset_left = 470.0
+offset_top = 370.0
+offset_right = 677.0
+offset_bottom = 433.0
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_q3gnf")
 text = "Play Again"

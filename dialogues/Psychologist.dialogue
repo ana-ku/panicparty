@@ -1,0 +1,75 @@
+~ Psychologist
+(A tall man in a crisp suit adjusts his glasses as you bump into him. His calm, inquisitive gaze settles on you.)
+Psychologist: "Oh, pardon me! Are you all right? I’m Dr. Fletcher, a psychologist. You seem… a little out of sorts. Do you want to talk about it?"
+- I’m fine
+	Psychologist: "Well, take care!"
+	(He just lets you leave. What a nice guy!)
+- I was just thinking about what makes humans inherently evil.
+	Psychologist: (His eyebrows lift, intrigued.) "Interesting. What’s your theory? Is it nature, nurture, or something else entirely?"
+	- Definitely nurture. Society is to blame.
+		Psychologist: (Nods enthusiastically.) "A classic argument. But tell me—what part of society do you think is the most corrupting? Politics? Media? Social media influencers?"
+		(He’s fully invested now, and you’re not going anywhere.)
+		- Video games
+			Psychologist: (His expression drops, and he sighs deeply.) "Oh... video games. Honestly, I’ve never been able to connect with them. Too many flashing lights, not enough substance."
+			Psychologist: "You should go. I need to think about why people keep bringing up games."
+		- I think it’s capitalism.
+			Psychologist: (His eyes light up, and he leans in eagerly.)
+			"Ah, the root of all corruption. A bold stance. Let’s unpack that—how do you see capitalism affecting human morality?"
+			- It exploits the weak and commodifies happiness.
+				Psychologist: (Pauses, nodding solemnly.) "Yes, that’s a powerful observation. You’ve given me much to think about. I’ll leave you to ponder your own morality."
+				(Evil of capitalism helped you. Great job, you are free.)
+			- It’s a machine that crushes individuality.
+				Psychologist: (Leans back, stroking his chin.) "A machine indeed. Fascinating metaphor. Well, I think I’ll need to consider this further... without distractions."
+				(Evil of capitalism helped you. Great job, you are free.)
+		- Clown colleges are the real problem.
+			Psychologist: (Blinks in confusion, then chuckles nervously.) "Clown colleges? I don’t think I’ve ever heard that theory before. Please, elaborate—how do clowns contribute to societal decay?"
+			- Clowns are anarchist symbols hiding in plain sight.
+				Psychologist: (Leans back, utterly baffled.) "Anarchist symbols? Huh. That’s... bizarre, but oddly poetic. I think I need a break after this."
+				(You didn’t leave because he wanted you to, but because you wanted to. That is true anarchism!)
+			- They control the economy through balloon animal inflation.
+				Psychologist: (Starts laughing but stops when he realizes you’re serious.) "Balloon animal... inflation? I don’t even know where to begin with that. Tell me more."
+				(He’s now completely invested in your wild theory, refusing to let you go.)
+				- There’s a balloon animal behind you.
+					Psychologist: (Turns around in surprise, his face pale as he spots the balloon animal.) "What... how? This... this can’t be a coincidence."
+					(He stares at the balloon animal as if it holds the secrets of the universe, giving you the perfect chance to slip away.)
+				- I murder psychologists when I don’t see balloon animals nearby.
+					Psychologist: (His eyes widen in sheer terror as he steps back, fumbling with his words.) "What... no... wait! Stay here—I’ll find you a balloon animal!"
+					(He bolts from the scene in a panic, desperately looking for a balloon animal, leaving you completely free to leave.)
+	- Actually, it’s dolphins. They’re pure evil and they’re teaching us.
+		Psychologist: (Blinks in surprise but nods slowly.) "Dolphins? Hmm, fascinating. Go on. How exactly do these aquatic masterminds corrupt human behavior?"
+		(He pulls out a small notebook, ready to write down your theory.)
+		- They’re mammals in the water. That’s suspicious.
+			Psychologist: (Tilts his head, considering it.)	"Ah, an animal that breaks the mold. Mammals pretending to be fish. It’s subversive, almost deceptive."
+			"I think I need to ponder this further. Please excuse me."
+			(He walks away, muttering about mammalian superiority and the secrets of evolution, leaving you free to escape.)
+		- Oh wait, I meant sharks.
+			Psychologist: (Stops, looking confused.) "Sharks? That’s... a completely different argument. Why would you conflate the two?"
+			(Pauses, then shakes his head in disbelief.) "I think you need to sort your aquatic metaphors. I’ll leave you to it."
+			(He steps away, clearly baffled, and you use the opportunity to slip away unnoticed.)
+	- It’s the cursed factory in the woods. I can still hear the screams.
+		Psychologist: (Pauses, visibly concerned.) "...Cursed factory? That’s… alarming. But I think that might be a story for another day. Maybe come to my office and we can solve this issue... with the right amount of care and money."
+		(He steps back, clearly unsure how to proceed, and you slip away unnoticed.)
+- NO! I DO NOT WANT TO TALK WITH ANYONE!
+	Psychologist: (He starts to write something in his notepad.) "And how long have you not wanted to talk with anyone?"
+	- I never wanted to talk! I was forced by my attractive mother!
+		Psychologist: (He raises his hand to the sky and shouts.) "FREEEEEUD!"
+		(With this outburst, he politely excuses himself and lets you go. What a story to write to your attractive mother!)
+	- Honestly? It’s been a tough year.
+		(You started talking about recent events when you realized he is now talking to someone else. You sadly walk away without telling him how your fight with your evil twin left scars on your soul.)
+	- I don’t know, like five m... hey! You can’t manipulate me!
+		Psychologist: "Can’t or shouldn’t?"
+		- Can’t!
+			Psychologist: "Why not?" => Disputation
+		- Shouldn’t!
+			Psychologist: "Why not?" => Disputation
+
+=> END
+
+~ Disputation
+
+(You stand there, thinking about answers, when he puts his arm on your shoulder.)
+Psychologist: "It will be 500 dollars."
+- Run away, because you have to protect your money.
+	(If you cared about your mental health like you care about money, you would have a healthier life. Sadly, you don’t. You left the psychologist.)
+- Use reverse psychology.
+	(You started manipulating and gaslighting him. He had to admit that he owes you! You are 500 dollars richer..)
